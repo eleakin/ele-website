@@ -30,7 +30,7 @@ export function Hero() {
         </motion.div>
         <motion.h1 {...fade(0.05)} className="mt-5 max-w-4xl">
           Consulting for all your{" "}
-          <span className="text-accent">human resource data needs.</span>
+          <span className="text-accent">Human Resource data needs.</span>
         </motion.h1>
         <motion.p
           {...fade(0.12)}
