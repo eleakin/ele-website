@@ -10,11 +10,11 @@ export type TeamMember = {
 // Replace with optimized photos under /public/team/ and update imageUrl.
 export const team: TeamMember[] = [
   {
-    name: "[Founding Partner]",
+    name: "Eric",
     role: "Founding Partner",
     bio: "Twenty years across people analytics, total rewards, and HR technology at global employers. Believes the best workforce analytics is invisible — it just makes the next people decision easier.",
     credentials: ["MS, Industrial-Organizational Psychology", "Former Head of People Analytics"],
-    imageUrl: "/team/placeholder-1.svg",
+    imageUrl: "/team/eric.png",
   },
   {
     name: "[Principal, People Analytics]",
