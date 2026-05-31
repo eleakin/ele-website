@@ -3,24 +3,17 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { AlertCircle, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-
-const ContactSchema = z.object({
-  name: z.string().min(2, "Please enter your name."),
-  email: z.string().email("Please enter a valid email address."),
-  organization: z.string().min(2, "Please enter your organization."),
-  message: z.string().min(20, "A few more details help us prepare for the call (min 20 characters)."),
-});
-
-type ContactValues = z.infer<typeof ContactSchema>;
+import { ContactSchema, type ContactValues } from "@/lib/validations/contact";
+import { submitContact } from "@/app/contact/actions";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [formError, setFormError] = useState<string | null>(null);
 
   const {
     register,
@@ -32,12 +25,13 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: ContactValues) {
-    // TODO: wire to your transactional email provider (Resend, Postmark, etc.)
-    // or to a CRM webhook — e.g. POST `values` to /api/contact. See README.
-    // Simulating a successful submission for now.
-    void values;
-    await new Promise((r) => setTimeout(r, 700));
-    setSubmitted(true);
+    setFormError(null);
+    const result = await submitContact(values);
+    if (result.ok) {
+      setSubmitted(true);
+    } else {
+      setFormError(result.error);
+    }
   }
 
   if (submitted) {
@@ -108,6 +102,15 @@ export function ContactForm() {
           />
         }
       />
+      {formError && (
+        <div
+          role="alert"
+          className="flex items-start gap-3 rounded-lg border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive"
+        >
+          <AlertCircle className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+          <span>{formError}</span>
+        </div>
+      )}
       <div className="flex items-center justify-between gap-4">
         <p className="text-xs text-ink-muted">
           By submitting you agree we may contact you about your inquiry.

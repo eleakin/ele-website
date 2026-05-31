@@ -17,9 +17,17 @@ analytics consulting practice. Clean, accessible, fast, easy to rebrand.
 
 ```bash
 npm install
-cp .env.example .env.local        # then edit NEXT_PUBLIC_SITE_URL
+cp .env.example .env.local        # fill in NEXT_PUBLIC_SITE_URL + Supabase keys
 npm run dev                       # http://localhost:3000
 ```
+
+Required environment variables (see `.env.example`):
+
+| Variable                              | Purpose                                            |
+| ------------------------------------- | -------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`                | Canonical URL for metadata, sitemap, robots, OG    |
+| `NEXT_PUBLIC_SUPABASE_URL`            | Supabase project URL                               |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`| Supabase publishable key (browser-safe; RLS-gated) |
 
 Other scripts:
 
@@ -30,9 +38,8 @@ npm run lint       # next lint
 npm run typecheck  # tsc --noEmit
 ```
 
-> The `package.json` pins `react@19-rc` to match Next 15. If your environment
-> requires a stable React, swap both `react` and `react-dom` to `^18.3.1` —
-> the app does not use React 19-only APIs.
+> `react`/`react-dom` are pinned to `^18.3.1` (stable) for clean peer
+> resolution with React Hook Form; the app uses no React 19-only APIs.
 
 ## Where to edit content
 
@@ -124,15 +131,42 @@ Typography pairs **Fraunces** (display) with **Inter** (body), both via
 - No client JS in marketing copy paths beyond the components that need it
   (hero, mobile nav, fade-in wrapper, contact form)
 
-## Contact form
+## Contact form & Supabase
 
-`components/site/contact-form.tsx` validates with Zod and currently simulates a
-successful submit. To wire it up:
+The contact form persists submissions to Supabase. No authentication is used —
+the public form is open to everyone.
 
-1. Create an API route (`app/api/contact/route.ts`) or a server action.
-2. In `onSubmit`, `POST` the validated `_values` to your provider of choice
-   (Resend, Postmark, SendGrid, HubSpot, Salesforce, etc.).
-3. Keep the success-state UI as-is — it already announces via `aria-live`.
+Flow:
+
+1. `components/site/contact-form.tsx` validates with React Hook Form + Zod
+   (shared schema in `lib/validations/contact.ts`).
+2. On submit it calls the `submitContact` **server action**
+   (`app/contact/actions.ts`), which re-validates server-side and inserts into
+   Supabase.
+3. The success state announces via `aria-live`; failures show an inline
+   `role="alert"` banner.
+
+Supabase pieces:
+
+| Path                       | Role                                                     |
+| -------------------------- | -------------------------------------------------------- |
+| `lib/supabase/server.ts`   | Server client (`@supabase/ssr`) for actions/RSC          |
+| `lib/supabase/client.ts`   | Browser client (`@supabase/ssr`)                         |
+| `app/contact/actions.ts`   | Server action that inserts a submission                  |
+
+Database: table `public.contact_submissions` with **RLS enabled**. A single
+policy allows the anonymous role to `INSERT` only — submissions are **not**
+publicly readable (no `SELECT` policy), so the form works without auth while the
+data stays private. Column `CHECK` constraints mirror the Zod bounds as a
+server-side safety net. Read submissions in the Supabase dashboard or via the
+service role.
+
+> Because there is no `SELECT` policy, the insert must not use `RETURNING` —
+> the server action calls `.insert()` **without** `.select()` (which sends
+> `return=minimal`). Adding `.select()` would require a read policy.
+
+To forward submissions to email/CRM as well, extend `submitContact` to also
+call your provider (Resend, Postmark, HubSpot, etc.) after the insert.
 
 ## Migrating insights to MDX
 
