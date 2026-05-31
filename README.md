@@ -1,7 +1,7 @@
-# ELE Consulting — Marketing Site
+# ELE People Analytics — Marketing Site
 
-A production-ready Next.js (App Router) marketing site for a data & analytics
-consulting practice. Clean, accessible, fast, easy to rebrand.
+A production-ready Next.js (App Router) marketing site for a people / HR data
+analytics consulting practice. Clean, accessible, fast, easy to rebrand.
 
 ## Stack
 
@@ -152,10 +152,10 @@ frontmatter shape matches.
 The brief left bracketed placeholders. The defaults below are easy to swap in
 `lib/site-config.ts` and `lib/content/*`:
 
-- **Firm name:** ELE Consulting
-- **Type:** Data & analytics consulting
-- **Target clients:** Public-sector health agencies (state Medicaid, public
-  health, 1115 waiver programs)
+- **Firm name:** ELE People Analytics
+- **Type:** People / HR data analytics consulting
+- **Target clients:** HR and total rewards leaders at mid-to-large employers
+  (technology, retail, healthcare, financial services)
 - **Palette:** Deep navy (`#0B1F33`) + slate + deep teal accent (`#0F766E`)
 - **Fonts:** Fraunces (display) + Inter (body)
 - **Domain:** `https://www.example.com` (replace via `NEXT_PUBLIC_SITE_URL` and

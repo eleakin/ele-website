@@ -2,11 +2,11 @@
  * Central site configuration. Swap these values to rebrand the entire site.
  */
 export const siteConfig = {
-  name: "ELE Consulting",
+  name: "ELE People Analytics",
   shortName: "ELE",
   url: "https://www.example.com", // TODO: replace with production URL
   description:
-    "Data & analytics consulting for public-sector health agencies. We help leaders turn complex data into measurable program outcomes.",
+    "People analytics consulting for HR and total rewards leaders. We help organizations turn workforce data into decisions about hiring, retention, pay equity, and engagement.",
   tagline: "Evidence. Leverage. Execution.",
   email: "hello@example.com",
   phone: "+1 (555) 010-0100",

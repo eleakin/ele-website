@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   keywords: [
-    "data consulting",
-    "analytics consulting",
-    "public health analytics",
-    "Medicaid analytics",
-    "program evaluation",
-    "health data platform",
+    "people analytics",
+    "HR analytics consulting",
+    "workforce analytics",
+    "attrition modeling",
+    "pay equity audit",
+    "HR data platform",
   ],
   openGraph: {
     type: "website",

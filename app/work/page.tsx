@@ -8,7 +8,7 @@ import { caseStudies } from "@/lib/content/case-studies";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected engagements shown as problem → approach → measurable outcome. Public-sector health analytics work that shipped and stuck.",
+    "Selected engagements shown as problem → approach → measurable outcome. People analytics work that shipped and stuck.",
 };
 
 export default function WorkPage() {

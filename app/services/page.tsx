@@ -9,7 +9,7 @@ import { CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Analytics strategy, data platform, dashboards, evaluation, privacy & governance, and team enablement for public-sector health agencies.",
+    "People analytics strategy, workforce data platform, dashboards, talent & retention analytics, pay equity, and HR team enablement.",
 };
 
 export default function ServicesPage() {
@@ -20,7 +20,7 @@ export default function ServicesPage() {
           as="h1"
           eyebrow="Services"
           title="Focused services. Measurable outcomes."
-          description="We deliberately keep our service catalog narrow. Each engagement is shaped around the specific decision your team is trying to make better."
+          description="We deliberately keep our service catalog narrow. Each engagement is shaped around the specific workforce decision your team is trying to make better."
         />
       </Section>
 

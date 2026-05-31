@@ -26,19 +26,19 @@ export function Hero() {
       />
       <Container className="relative pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-32 lg:pb-36">
         <motion.div {...fade(0)} className="max-w-3xl">
-          <span className="eyebrow">Data & analytics consulting</span>
+          <span className="eyebrow">People analytics consulting</span>
         </motion.div>
         <motion.h1 {...fade(0.05)} className="mt-5 max-w-4xl">
           Evidence-driven analytics for{" "}
-          <span className="text-accent">public-sector health.</span>
+          <span className="text-accent">the modern workforce.</span>
         </motion.h1>
         <motion.p
           {...fade(0.12)}
           className="mt-6 max-w-2xl text-lg sm:text-xl text-ink-muted leading-relaxed"
         >
-          We help agencies turn complex program data into decisions that hold up
-          to audit, legislative review, and the people they serve. No slideware,
-          no permanent dependency.
+          We help HR and total rewards leaders turn workforce data into decisions
+          about who to hire, how to keep them, and how to pay them fairly. No
+          vanity dashboards, no permanent dependency.
         </motion.p>
         <motion.div {...fade(0.2)} className="mt-10 flex flex-wrap items-center gap-3">
           <Button asChild variant="accent" size="lg">
@@ -57,9 +57,9 @@ export function Hero() {
           className="mt-16 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 border-t border-border pt-10 sm:grid-cols-4"
         >
           {[
-            { v: "20+ yrs", k: "in public-sector health analytics" },
-            { v: "$200M+", k: "in programs evaluated" },
-            { v: "0", k: "missed reporting windows" },
+            { v: "20+ yrs", k: "in people analytics" },
+            { v: "2M+", k: "employee records analyzed" },
+            { v: "0", k: "pay-equity findings overturned" },
             { v: "WCAG 2.1 AA", k: "accessible deliverables" },
           ].map((s) => (
             <div key={s.k}>

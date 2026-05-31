@@ -4,21 +4,21 @@ import { FadeIn } from "./fade-in";
 const testimonials = [
   {
     quote:
-      "They built infrastructure my team can actually own. Six months in, my analysts are shipping changes I never could have approved before.",
-    name: "[Chief Data Officer]",
-    role: "[State Medicaid Agency]",
+      "They built people analytics my team can actually own. Six months in, my HRBPs are acting on flight-risk signals I never had visibility into before.",
+    name: "[Chief People Officer]",
+    role: "[Global Technology Company]",
   },
   {
     quote:
-      "The evaluation passed federal review on the first submission. That has not happened to us in a decade.",
-    name: "[Program Director]",
-    role: "[1115 Waiver Program]",
+      "The pay equity analysis held up to legal review on the first pass. That has not happened to us before.",
+    name: "[VP, Total Rewards]",
+    role: "[Multinational Retailer]",
   },
   {
     quote:
-      "Honest, technically rigorous, and refreshingly uninterested in selling us things we don't need.",
-    name: "[Deputy Director]",
-    role: "[State Department of Health]",
+      "Honest, technically rigorous, and refreshingly uninterested in selling us a platform we don't need.",
+    name: "[Head of People Analytics]",
+    role: "[Healthcare System]",
   },
 ];
 

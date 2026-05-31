@@ -22,7 +22,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="What we do"
           title="A small set of services we do exceptionally well."
-          description="We focus on the work that determines whether an analytics investment pays off — strategy, platform, evaluation, and the team enablement that makes it last."
+          description="We focus on the work that determines whether a people analytics investment pays off — strategy, platform, talent analytics, and the team enablement that makes it last."
         />
         <div className="mt-14">
           <ServicesGrid compact />
@@ -33,7 +33,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Selected results"
           title="Numbers from the last few engagements."
-          description="Every metric below is from a real, named program. We are happy to walk through the methodology on a call."
+          description="Every metric below is from a real engagement. We are happy to walk through the methodology on a call."
         />
         <div className="mt-12">
           <ResultsStrip />

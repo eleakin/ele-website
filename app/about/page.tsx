@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/site/cta-banner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Our story, mission, and the people behind the work. A senior team that has spent careers inside public-sector health.",
+    "Our story, mission, and the people behind the work. A senior team that has spent careers inside HR, people analytics, and total rewards.",
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
             as="h1"
             eyebrow="About the firm"
             title="A small, senior team. Built for the work that matters."
-            description="We started this firm because the analytics work most agencies need is rarely done by the people who actually understand the constraints. Our partners have spent careers inside Medicaid, public health, and academic medicine."
+            description="We started this firm because the people analytics work most organizations need is rarely done by the people who actually understand the constraints. Our partners have spent careers inside HR, people analytics, and total rewards."
           />
           <dl className="grid grid-cols-3 gap-6 border-t border-border pt-8 lg:border-0 lg:pt-0">
             <Stat v="2018" k="Founded" />
@@ -34,9 +34,9 @@ export default function AboutPage() {
           <div>
             <h2 className="font-display text-3xl text-ink">Mission</h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-              To make the public’s data work for the public — by helping the
-              agencies entrusted with it build durable, honest analytics
-              capability they own.
+              To make work fairer and more humane — by helping the
+              organizations entrusted with people&rsquo;s careers build durable,
+              honest workforce analytics they own.
             </p>
           </div>
           <div>

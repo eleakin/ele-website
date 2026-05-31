@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Start a conversation about your analytics work. Every inquiry is read by a partner and answered within one business day.",
+    "Start a conversation about your people analytics work. Every inquiry is read by a partner and answered within one business day.",
 };
 
 export default function ContactPage() {

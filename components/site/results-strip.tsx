@@ -1,10 +1,10 @@
 import { FadeIn } from "./fade-in";
 
 const results = [
-  { metric: "92%", label: "less manual report assembly", source: "State Medicaid quality program" },
-  { metric: "1st-pass", label: "federal review acceptance", source: "1115 waiver evaluation" },
-  { metric: "0", label: "missed reportable-event windows", source: "Surveillance modernization" },
-  { metric: "400+", label: "staff onboarded to one definition layer", source: "Quality dashboard rollout" },
+  { metric: "31%", label: "less regretted attrition", source: "Attrition early-warning model" },
+  { metric: "$4.2M", label: "pay-equity remediation funded", source: "Pay equity audit" },
+  { metric: "7 → 1", label: "HR systems consolidated", source: "People-data platform" },
+  { metric: "90%", label: "less manual HR reporting", source: "Workforce dashboard rollout" },
 ];
 
 export function ResultsStrip() {

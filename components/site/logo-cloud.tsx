@@ -4,15 +4,15 @@ import { FadeIn } from "./fade-in";
 // before brand-approved logos are available. Replace with /public/clients/*.svg
 // and an <Image> for each entry.
 const clients = [
-  "Dept. of Health",
-  "Medicaid Agency",
-  "State Health Authority",
-  "Public Health Institute",
-  "County Health",
-  "University Center",
+  "Global Tech Co.",
+  "Retail Group",
+  "Health System",
+  "Financial Services",
+  "Manufacturing Co.",
+  "University HR",
 ];
 
-export function LogoCloud({ heading = "Trusted by agencies that can't afford to be wrong" }: { heading?: string }) {
+export function LogoCloud({ heading = "Trusted by people teams that can't afford to guess" }: { heading?: string }) {
   return (
     <FadeIn>
       <div>

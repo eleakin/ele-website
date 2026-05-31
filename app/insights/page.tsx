@@ -7,7 +7,7 @@ import { insights } from "@/lib/content/insights";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Field notes on building analytics capability inside public-sector health agencies.",
+    "Field notes on building people analytics capability inside HR and total rewards teams.",
 };
 
 export default function InsightsPage() {
@@ -19,7 +19,7 @@ export default function InsightsPage() {
           as="h1"
           eyebrow="Insights"
           title="Field notes from the work."
-          description="Short pieces on the strategy, platform, and evaluation problems we run into most often. Written for the people doing the work, not for marketing."
+          description="Short pieces on the strategy, platform, and pay equity problems we run into most often. Written for the people doing the work, not for marketing."
         />
       </Section>
 
