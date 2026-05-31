@@ -14,7 +14,7 @@ export const team: TeamMember[] = [
     role: "Founding Partner",
     bio: "Twenty years across people analytics, total rewards, and HR technology at global employers. Believes the best workforce analytics is invisible — it just makes the next people decision easier.",
     credentials: ["MS, Industrial-Organizational Psychology", "Former Head of People Analytics"],
-    imageUrl: "/team/eric.png",
+    imageUrl: "/team/eric.jpg",
   },
   {
     name: "[Principal, People Analytics]",
