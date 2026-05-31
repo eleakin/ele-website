@@ -21,6 +21,9 @@ yarn-error.log*
 # env files
 .env*
 !.env.example
+# .env.production holds only NEXT_PUBLIC_* values (browser-safe, RLS-gated).
+# Never add the Supabase service_role / secret key here.
+!.env.production
 
 # misc
 .DS_Store
