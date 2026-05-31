@@ -9,7 +9,6 @@ export const siteConfig = {
     "People analytics consulting for HR and total rewards leaders. We help organizations turn workforce data into decisions about hiring, retention, pay equity, and engagement.",
   tagline: "Evidence. Leverage. Execution.",
   email: "contact@eleconsulting.xyz",
-  phone: "+1 (555) 010-0100",
   address: {
     city: "Las Vegas",
     state: "NV",

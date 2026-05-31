@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
+import { Mail, MapPin, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/site/section";
 import { ContactForm } from "@/components/site/contact-form";
 import { siteConfig } from "@/lib/site-config";
@@ -26,11 +26,6 @@ export default function ContactPage() {
             <ContactRow icon={Mail} label="Email">
               <a className="hover:text-accent" href={`mailto:${siteConfig.email}`}>
                 {siteConfig.email}
-              </a>
-            </ContactRow>
-            <ContactRow icon={Phone} label="Phone">
-              <a className="hover:text-accent" href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
-                {siteConfig.phone}
               </a>
             </ContactRow>
             <ContactRow icon={MapPin} label="Office">
