@@ -29,8 +29,8 @@ export function Hero() {
           <span className="eyebrow">People analytics consulting</span>
         </motion.div>
         <motion.h1 {...fade(0.05)} className="mt-5 max-w-4xl">
-          Evidence-driven analytics for{" "}
-          <span className="text-accent">the modern workforce.</span>
+          Consulting for all your{" "}
+          <span className="text-accent">human resource data needs.</span>
         </motion.h1>
         <motion.p
           {...fade(0.12)}
