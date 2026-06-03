@@ -5,8 +5,8 @@ const testimonials = [
   {
     quote:
       "They built people analytics my team can actually own. Six months in, my HRBPs are acting on flight-risk signals I never had visibility into before.",
-    name: "[Chief People Officer]",
-    role: "[Global Technology Company]",
+    name: "Darren Stevens, VP Human Resources",
+    role: "Langendorf Foundation",
   },
   {
     quote:
