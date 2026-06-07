@@ -18,74 +18,74 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "people-analytics-strategy",
-    title: "People Analytics Strategy",
+    slug: "denial-diagnostic",
+    title: "Denial Diagnostic",
     summary:
-      "A pragmatic roadmap that aligns your workforce data investments with the business outcomes HR is accountable for.",
+      "A fixed-scope review of denials, A/R aging, and audit risk — with a measurable baseline.",
     outcomes: [
-      "Prioritized 12-month people analytics roadmap",
-      "Clear ownership across HR, IT, and the business",
-      "Decision-grade workforce KPIs tied to board reporting",
+      "Root-cause analysis of top denial drivers",
+      "Dollar-weighted recovery action list",
+      "A baseline you can measure future months against",
     ],
     icon: LineChart,
   },
   {
-    slug: "workforce-data-platform",
-    title: "Workforce Data Platform & Engineering",
+    slug: "revenue-cycle-analytics",
+    title: "Revenue-Cycle Analytics",
     summary:
-      "Modern, governed people-data infrastructure that unifies HRIS, ATS, and payroll — without ripping out what already works.",
+      "Recurring dashboards and denial-prediction reporting, built in R, on top of the EHR you already run.",
     outcomes: [
-      "Governed people-data warehouse with lineage and access controls",
-      "Reproducible pipelines from Workday, SAP, Greenhouse, and payroll",
-      "Documented data contracts between HR and IT teams",
-    ],
-    icon: Database,
-  },
-  {
-    slug: "dashboards-reporting",
-    title: "Dashboards & Reporting",
-    summary:
-      "Headcount, attrition, and DEI reporting that HR business partners actually open — built around the decisions they make every week.",
-    outcomes: [
-      "Executive and HRBP-level workforce dashboards",
-      "WCAG-accessible, board-ready deliverables",
-      "Self-serve exploration for HR analysts",
+      "Monthly denial, A/R, and clean-claim dashboards",
+      "Predictive flags before claims are submitted",
+      "Plain-language briefs for the front desk",
     ],
     icon: BarChart3,
   },
   {
-    slug: "talent-retention-analytics",
-    title: "Talent & Retention Analytics",
+    slug: "audit-defense-documentation",
+    title: "Audit Defense & Documentation",
     summary:
-      "Attrition modeling, flight-risk scoring, and hiring-funnel analysis that hold up to scrutiny from finance and legal.",
+      "Documentation-quality scoring against medical-necessity and active-vs-maintenance rules.",
     outcomes: [
-      "Validated attrition and flight-risk models",
-      "Hiring-funnel and quality-of-hire diagnostics",
-      "Plain-language briefs for non-technical leaders",
-    ],
-    icon: Workflow,
-  },
-  {
-    slug: "pay-equity-compliance",
-    title: "Pay Equity & Workforce Compliance",
-    summary:
-      "Defensible pay equity audits and EEO/OFCCP-aware analysis, with employee-data privacy baked into the engineering.",
-    outcomes: [
-      "Audit-ready pay equity analysis with documented methodology",
-      "Role-based access aligned to a need-to-know basis",
-      "GDPR- and CCPA-aware handling of sensitive employee data",
+      "Audit-readiness scoring of your notes",
+      "Active-treatment vs maintenance documentation review",
+      "Defensible records before a payer asks",
     ],
     icon: ShieldCheck,
   },
   {
-    slug: "hr-team-enablement",
-    title: "HR Team Enablement",
+    slug: "eligibility-automation",
+    title: "Eligibility & Front-Desk Automation",
     summary:
-      "Hands-on coaching so your people team owns the work after we leave — not a deck and a goodbye.",
+      "Pre-visit eligibility, benefit, and prior-auth checks that stop denials before the patient arrives.",
     outcomes: [
-      "Embedded pairing with your HR analysts",
-      "Internal documentation and runbooks",
-      "Hiring rubrics and structured interview kits for analytics roles",
+      "Automated pre-visit eligibility verification",
+      "Visit-limit and prior-auth alerts",
+      "Fewer surprises at time of service",
+    ],
+    icon: Workflow,
+  },
+  {
+    slug: "ai-tool-enablement",
+    title: "AI Tool Enablement",
+    summary:
+      "Configure and actually use the AI features your platform already charges you for — without a migration.",
+    outcomes: [
+      "Setup of existing AI scribe / coding tools",
+      "Workflow templates your staff will adopt",
+      "No platform switch required",
+    ],
+    icon: Database,
+  },
+  {
+    slug: "practice-team-coaching",
+    title: "Practice Team Coaching",
+    summary:
+      "We pair with your billing staff until they own the workflow — not a deck and a goodbye.",
+    outcomes: [
+      "Embedded coaching with your billing team",
+      "Follow-up cadence and runbooks",
+      "Success means we are not a permanent line item",
     ],
     icon: Users,
   },
@@ -94,22 +94,22 @@ export const services: Service[] = [
 export const processSteps = [
   {
     n: "01",
-    title: "Listen",
-    body: "We start by sitting with HR leaders, business partners, and the data itself. No slideware until we understand the workforce decision that actually matters.",
+    title: "Export",
+    body: "You send a standard billing export from the system you already use. No platform switch, no rip-and-replace.",
   },
   {
     n: "02",
-    title: "Frame",
-    body: "We co-author a tight problem statement, name the people decisions in scope, and agree on what “good” looks like at the end of the engagement.",
+    title: "Diagnose",
+    body: "We model denials, A/R aging, and documentation risk down to root cause — what is actually costing you, and why.",
   },
   {
     n: "03",
-    title: "Build",
-    body: "Small increments, reviewed weekly. Every deliverable is documented, version-controlled, and handed off in a form your HR team can maintain.",
+    title: "Report",
+    body: "You get plain-language findings with a ranked, dollar-weighted action list your front desk can act on this week.",
   },
   {
     n: "04",
-    title: "Transfer",
-    body: "We pair with your people team until they own it. Success means we're not a permanent dependency.",
+    title: "Follow through",
+    body: "Optional ongoing analytics and coaching until the numbers move. Success means we are not a permanent line item.",
   },
 ];

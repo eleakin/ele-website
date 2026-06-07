@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Container } from "./container";
 
 export function CtaBanner({
-  title = "Have a workforce question worth answering carefully?",
-  body = "A 30-minute discovery call is the fastest way to figure out whether we're the right team for the work. No deck, no pressure.",
-  cta = "Book a discovery call",
+  title = "Curious what your denials are really costing you?",
+  body = "A short, no-pressure call is the fastest way to see whether we're the right fit. Send a billing export and we'll show you where revenue is leaking.",
+  cta = "Get a free denial review",
   href = "/contact",
 }: {
   title?: string;

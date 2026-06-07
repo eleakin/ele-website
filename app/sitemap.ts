@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const base = siteConfig.url.replace(/\/$/, "");
 
-  const staticRoutes = ["", "/services", "/work", "/about", "/insights", "/contact"].map(
+  const staticRoutes = ["", "/services", "/work", "/about", "/insights", "/contact", "/privacy"].map(
     (path) => ({
       url: `${base}${path || "/"}`,
       lastModified: now,

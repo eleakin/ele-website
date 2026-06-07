@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   keywords: [
-    "people analytics",
-    "HR analytics consulting",
-    "workforce analytics",
-    "attrition modeling",
-    "pay equity audit",
-    "HR data platform",
+    "chiropractic billing",
+    "chiropractic revenue cycle",
+    "claim denial management",
+    "chiropractic audit defense",
+    "medical necessity documentation",
+    "chiropractic practice analytics",
   ],
   openGraph: {
     type: "website",

@@ -23,7 +23,7 @@ export function SiteFooter() {
             title="Practice"
             links={[
               { label: "Services", href: "/services" },
-              { label: "Work", href: "/work" },
+              { label: "Approach", href: "/#approach" },
               { label: "Insights", href: "/insights" },
             ]}
           />
@@ -32,6 +32,7 @@ export function SiteFooter() {
             links={[
               { label: "About", href: "/about" },
               { label: "Contact", href: "/contact" },
+              { label: "Privacy", href: "/privacy" },
             ]}
           />
           <FooterCol

@@ -1,39 +1,44 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/site/section";
 import { SectionHeading } from "@/components/site/section-heading";
-import { CaseStudyCard } from "@/components/site/case-study-card";
+import { ProcessSteps } from "@/components/site/process-steps";
 import { CtaBanner } from "@/components/site/cta-banner";
-import { caseStudies } from "@/lib/content/case-studies";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Approach",
   description:
-    "Selected engagements shown as problem → approach → measurable outcome. People analytics work that shipped and stuck.",
+    "How we work: export, diagnose, report, and follow through. A fixed-scope path from your existing billing data to a dollar-weighted recovery plan.",
 };
 
-export default function WorkPage() {
+export default function ApproachPage() {
   return (
     <>
       <Section className="border-b border-border bg-surface">
         <SectionHeading
           as="h1"
-          eyebrow="Selected work"
-          title="Engagements, told honestly."
-          description="Every case study below follows the same structure — the problem we were hired to solve, the approach we actually took, and the outcomes we can defend. Client names are anonymized where required."
+          eyebrow="Our approach"
+          title="From your billing export to a plan you can act on."
+          description="A deliberately simple, fixed-scope path. No platform switch, no rip-and-replace — we work on top of the system you already run."
         />
       </Section>
 
       <Section>
-        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {caseStudies.map((c, i) => (
-            <li key={c.slug}>
-              <CaseStudyCard c={c} index={i} />
-            </li>
-          ))}
-        </ul>
+        <ProcessSteps />
       </Section>
 
-      <CtaBanner />
+      <Section className="bg-muted/40">
+        <SectionHeading
+          eyebrow="On results"
+          title="We publish numbers we can stand behind."
+          description="We are a new practice and we will not show invented client results. As pilot engagements complete, real and clearly-attributed outcomes will appear here. Until then, the figures on our site are labeled industry benchmarks — not client claims."
+        />
+      </Section>
+
+      <CtaBanner
+        title="Want to see how it would work for your clinic?"
+        body="Send us a standard billing export and we'll walk you through what your denials and A/R are really costing you."
+        cta="Get a free denial review"
+      />
     </>
   );
 }

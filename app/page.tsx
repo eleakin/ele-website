@@ -2,27 +2,21 @@ import { Hero } from "@/components/site/hero";
 import { Section } from "@/components/site/section";
 import { SectionHeading } from "@/components/site/section-heading";
 import { ServicesGrid } from "@/components/site/services-grid";
-import { LogoCloud } from "@/components/site/logo-cloud";
-import { Testimonials } from "@/components/site/testimonials";
 import { ResultsStrip } from "@/components/site/results-strip";
+import { ProcessSteps } from "@/components/site/process-steps";
+import { DenialCalculator } from "@/components/site/denial-calculator";
 import { CtaBanner } from "@/components/site/cta-banner";
-import { CaseStudyCard } from "@/components/site/case-study-card";
-import { caseStudies } from "@/lib/content/case-studies";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
 
-      <Section className="bg-background">
-        <LogoCloud />
-      </Section>
-
       <Section className="bg-muted/40">
         <SectionHeading
           eyebrow="What we do"
-          title="A small set of services we do exceptionally well."
-          description="We focus on the work that determines whether a people analytics investment pays off — strategy, platform, talent analytics, and the team enablement that makes it last."
+          title="A small set of services, done exceptionally well."
+          description="Focused on the work that decides whether your billing pays off — recovery, defensibility, and the team habits that make it last."
         />
         <div className="mt-14">
           <ServicesGrid compact />
@@ -31,9 +25,9 @@ export default function HomePage() {
 
       <Section>
         <SectionHeading
-          eyebrow="Selected results"
-          title="Numbers from the last few engagements."
-          description="Every metric below is from a real engagement. We are happy to walk through the methodology on a call."
+          eyebrow="The problem"
+          title="The problem, in numbers."
+          description="These are industry figures, not client results — a sense of how much revenue insurance-billing practices quietly lose to denials, slow follow-up, and coding errors."
         />
         <div className="mt-12">
           <ResultsStrip />
@@ -42,29 +36,31 @@ export default function HomePage() {
 
       <Section className="bg-muted/40">
         <SectionHeading
-          eyebrow="Recent work"
-          title="Engagements that shipped and stuck."
-        />
-        <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {caseStudies.map((c, i) => (
-            <li key={c.slug}>
-              <CaseStudyCard c={c} index={i} />
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section>
-        <SectionHeading
-          eyebrow="What clients say"
-          title="Quiet, durable, technically honest."
+          eyebrow="Try it"
+          title="How much is leaking?"
+          description="Move the sliders to estimate the revenue your practice could realistically recover in a year. Illustrative only — not a guarantee."
         />
         <div className="mt-12">
-          <Testimonials />
+          <DenialCalculator />
         </div>
       </Section>
 
-      <CtaBanner />
+      <Section id="approach">
+        <SectionHeading
+          eyebrow="Our approach"
+          title="From your billing export to a plan you can act on."
+          description="A deliberately simple, fixed-scope path. No platform switch — we work on top of the system you already run."
+        />
+        <div className="mt-12">
+          <ProcessSteps />
+        </div>
+      </Section>
+
+      <CtaBanner
+        title="Curious what your denials are really costing you?"
+        body="Send a standard billing export and we'll walk you through where the revenue is leaking — no platform switch, no obligation."
+        cta="Get a free denial review"
+      />
     </>
   );
 }

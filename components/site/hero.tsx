@@ -26,50 +26,49 @@ export function Hero() {
       />
       <Container className="relative pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-32 lg:pb-36">
         <motion.div {...fade(0)} className="max-w-3xl">
-          <span className="eyebrow">People analytics consulting</span>
+          <span className="eyebrow">Chiropractic revenue &amp; compliance analytics</span>
         </motion.div>
         <motion.h1 {...fade(0.05)} className="mt-5 max-w-4xl">
-          Consulting for all your{" "}
-          <span className="text-accent">Human Resource data needs.</span>
+          Stop losing a third of your revenue to{" "}
+          <span className="text-accent">denials.</span>
         </motion.h1>
         <motion.p
           {...fade(0.12)}
           className="mt-6 max-w-2xl text-lg sm:text-xl text-ink-muted leading-relaxed"
         >
-          We help HR and total rewards leaders turn workforce data into decisions
-          about who to hire, how to keep them, and how to pay them fairly. No
-          vanity dashboards, no permanent dependency.
+          Audit-ready documentation and revenue-cycle analytics for
+          insurance-billing chiropractic practices — from a chiropractor who
+          reads the data, not just the claim form.
         </motion.p>
         <motion.div {...fade(0.2)} className="mt-10 flex flex-wrap items-center gap-3">
           <Button asChild variant="accent" size="lg">
             <Link href="/contact">
-              Book a discovery call
+              Get a free denial review
               <ArrowRight aria-hidden="true" />
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link href="/work">See our work</Link>
+            <Link href="/#approach">See how it works</Link>
           </Button>
         </motion.div>
 
-        <motion.dl
+        <motion.ul
           {...fade(0.3)}
-          className="mt-16 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 border-t border-border pt-10 sm:grid-cols-4"
+          className="mt-16 flex max-w-3xl flex-wrap items-center gap-x-3 gap-y-3 border-t border-border pt-10 text-sm font-medium text-ink"
         >
-          {[
-            { v: "20+ yrs", k: "in people analytics" },
-            { v: "2M+", k: "employee records analyzed" },
-            { v: "0", k: "pay-equity findings overturned" },
-            { v: "WCAG 2.1 AA", k: "accessible deliverables" },
-          ].map((s) => (
-            <div key={s.k}>
-              <dt className="text-xs uppercase tracking-wider text-ink-muted">
-                {s.k}
-              </dt>
-              <dd className="mt-1 font-display text-2xl text-ink">{s.v}</dd>
-            </div>
-          ))}
-        </motion.dl>
+          {["DC-led", "Works with your existing EHR", "HIPAA-ready, BAA on request"].map(
+            (item, i) => (
+              <li key={item} className="flex items-center gap-3">
+                {i > 0 && (
+                  <span aria-hidden="true" className="text-border">
+                    ·
+                  </span>
+                )}
+                <span>{item}</span>
+              </li>
+            )
+          )}
+        </motion.ul>
       </Container>
     </section>
   );

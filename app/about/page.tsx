@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/site/cta-banner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Our story, mission, and the people behind the work. A senior team that has spent careers inside HR, people analytics, and total rewards.",
+    "Founder-led chiropractic revenue-cycle and audit-defense analytics — clinical fluency and statistical rigor brought to the back office.",
 };
 
 export default function AboutPage() {
@@ -17,14 +17,14 @@ export default function AboutPage() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-end">
           <SectionHeading
             as="h1"
-            eyebrow="About the firm"
-            title="A small, senior team. Built for the work that matters."
-            description="We started this firm because the people analytics work most organizations need is rarely done by the people who actually understand the constraints. Our partners have spent careers inside HR, people analytics, and total rewards."
+            eyebrow="About the practice"
+            title="Built by a chiropractor who reads the data."
+            description="Most chiropractic billing help comes from people who have never written a SOAP note — or from analysts who have never read one. ELE Practice Analytics exists to close that gap: clinical fluency and statistical rigor, applied to the back office."
           />
           <dl className="grid grid-cols-3 gap-6 border-t border-border pt-8 lg:border-0 lg:pt-0">
-            <Stat v="2018" k="Founded" />
-            <Stat v="12" k="Engagements / yr" />
-            <Stat v="100%" k="Senior staffed" />
+            <Stat v="DC + Analyst" k="Founder-led" />
+            <Stat v="Your EHR" k="No platform switch" />
+            <Stat v="BAA" k="On request" />
           </dl>
         </div>
       </Section>
@@ -34,9 +34,9 @@ export default function AboutPage() {
           <div>
             <h2 className="font-display text-3xl text-ink">Mission</h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-              To make work fairer and more humane — by helping the
-              organizations entrusted with people&rsquo;s careers build durable,
-              honest workforce analytics they own.
+              To help insurance-billing chiropractic practices keep the revenue
+              they have already earned — by making denials, A/R, and audit risk
+              visible, and the fixes obvious.
             </p>
           </div>
           <div>
@@ -44,11 +44,11 @@ export default function AboutPage() {
             <ul className="mt-4 space-y-3 text-base text-ink/85">
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">Senior on every engagement.</strong> No junior consultants learning on your time.</span>
+                <span><strong className="text-ink">A clinician reads your data.</strong> We understand the note and the claim, not just the spreadsheet.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">Transfer-first.</strong> Every artifact is built to be maintained by your team.</span>
+                <span><strong className="text-ink">No platform switch.</strong> We work on top of the EHR and billing system you already run.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
@@ -60,15 +60,15 @@ export default function AboutPage() {
       </Section>
 
       <Section className="bg-muted/40">
-        <SectionHeading eyebrow="Team" title="The people you'll actually work with." />
+        <SectionHeading eyebrow="Founder" title="Who you'll work with." />
         <div className="mt-12">
           <TeamGrid />
         </div>
       </Section>
 
       <CtaBanner
-        title="Want to talk to a partner directly?"
-        body="Every inquiry is read by a partner. We'll set up a 30-minute call within a few business days."
+        title="Want to talk it through directly?"
+        body="Every inquiry is read by the founder. We'll set up a short call within a few business days."
         cta="Get in touch"
       />
     </>

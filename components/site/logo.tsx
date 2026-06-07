@@ -20,7 +20,7 @@ export function Logo({ className }: { className?: string }) {
         />
       </svg>
       <span>{siteConfig.shortName}</span>
-      <span className="text-ink-muted font-normal">/ People Analytics</span>
+      <span className="text-ink-muted font-normal">/ Practice Analytics</span>
     </span>
   );
 }

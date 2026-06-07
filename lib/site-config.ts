@@ -2,11 +2,11 @@
  * Central site configuration. Swap these values to rebrand the entire site.
  */
 export const siteConfig = {
-  name: "ELE People Analytics",
+  name: "ELE Practice Analytics",
   shortName: "ELE",
   url: "https://www.example.com", // TODO: replace with production URL
   description:
-    "People analytics consulting for HR and total rewards leaders. We help organizations turn workforce data into decisions about hiring, retention, pay equity, and engagement.",
+    "Revenue-cycle and audit-defense analytics for insurance-billing chiropractic practices. We help clinics recover revenue lost to denials and stay audit-ready — built by a chiropractor who reads the data.",
   tagline: "Evidence. Leverage. Execution.",
   email: "contact@eleconsulting.xyz",
   address: {
@@ -19,7 +19,7 @@ export const siteConfig = {
   },
   nav: [
     { label: "Services", href: "/services" },
-    { label: "Work", href: "/work" },
+    { label: "Approach", href: "/#approach" },
     { label: "About", href: "/about" },
     { label: "Insights", href: "/insights" },
     { label: "Contact", href: "/contact" },
