@@ -17,6 +17,10 @@ export const ContactSchema = z.object({
     .trim()
     .email("Please enter a valid email address.")
     .max(320, "That email is too long."),
+  phone: z
+    .string()
+    .trim()
+    .regex(/^\d{3}-\d{3}-\d{4}$/, "Please enter a 10-digit phone number."),
   organization: z
     .string()
     .trim()

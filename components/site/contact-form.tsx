@@ -24,6 +24,9 @@ export function ContactForm() {
     mode: "onBlur",
   });
 
+  // Register phone separately so we can live-format keystrokes to XXX-XXX-XXXX.
+  const phoneReg = register("phone");
+
   async function onSubmit(values: ContactValues) {
     setFormError(null);
     const result = await submitContact(values);
@@ -75,19 +78,43 @@ export function ContactForm() {
           }
         />
       </div>
-      <Field
-        id="organization"
-        label="Organization"
-        error={errors.organization?.message}
-        input={
-          <Input
-            id="organization"
-            autoComplete="organization"
-            aria-invalid={!!errors.organization}
-            {...register("organization")}
-          />
-        }
-      />
+      <div className="grid gap-6 sm:grid-cols-2">
+        <Field
+          id="phone"
+          label="Phone"
+          helper="Format: XXX-XXX-XXXX"
+          error={errors.phone?.message}
+          input={
+            <Input
+              id="phone"
+              type="tel"
+              inputMode="numeric"
+              autoComplete="tel"
+              placeholder="555-123-4567"
+              maxLength={12}
+              aria-invalid={!!errors.phone}
+              {...phoneReg}
+              onChange={(e) => {
+                e.target.value = formatPhone(e.target.value);
+                phoneReg.onChange(e);
+              }}
+            />
+          }
+        />
+        <Field
+          id="organization"
+          label="Organization"
+          error={errors.organization?.message}
+          input={
+            <Input
+              id="organization"
+              autoComplete="organization"
+              aria-invalid={!!errors.organization}
+              {...register("organization")}
+            />
+          }
+        />
+      </div>
       <Field
         id="message"
         label="What are you working on?"
@@ -122,6 +149,14 @@ export function ContactForm() {
       </div>
     </form>
   );
+}
+
+// Progressively format keystrokes into XXX-XXX-XXXX (caps at 10 digits).
+function formatPhone(value: string): string {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+  return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
 }
 
 function Field({
