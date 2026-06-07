@@ -6,7 +6,7 @@ const benchmarks = [
   { metric: "20–30%", label: "of revenue lost to denials and leakage" },
   { metric: "25 vs 75", label: "days in A/R — the cost of follow-up discipline" },
   { metric: "98940–43", label: "adjustment codes where errors concentrate" },
-  { metric: "5–10 hrs/wk", label: "clinician time AI documentation can return" },
+  { metric: "1–3 hrs/wk", label: "clinician time AI documentation can return" },
 ];
 
 export function ResultsStrip() {
@@ -23,7 +23,10 @@ export function ResultsStrip() {
         ))}
       </dl>
       <p className="mt-4 text-xs text-ink-muted">
-        Industry figures, not client results. Sources: zHealth; MedCloudMD (2026); Prognocis; SpryPT (2026).
+        Illustrative industry ranges, not client results — drawn from public
+        revenue-cycle benchmarks (MGMA; CMS chiropractic billing guidance;
+        chiropractic-billing industry reporting) and published AI-scribe studies.
+        Verify against your own practice data.
       </p>
     </FadeIn>
   );
