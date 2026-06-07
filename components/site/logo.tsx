@@ -20,8 +20,8 @@ export function Logo({ className }: { className?: string }) {
         />
       </svg>
       <span>{siteConfig.shortName}</span>
-      <span className="hidden whitespace-nowrap text-sm font-normal text-ink-muted xl:inline">
-        / Chiropractic Practice Revenue Cycle Management
+      <span className="hidden whitespace-nowrap text-sm font-normal text-ink-muted lg:inline">
+        / Chiropractic Revenue Cycle Management
       </span>
     </span>
   );
