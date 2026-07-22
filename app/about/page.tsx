@@ -49,7 +49,7 @@ export default function AboutPage() {
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">See it before you buy it.</strong> A free 25–50 name sample list for your own ZIP code, before any money changes hands.</span>
+                <span><strong className="text-ink">See it before you buy it.</strong> A free 25 name sample list for your own ZIP code, before any money changes hands.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />

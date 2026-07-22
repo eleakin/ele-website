@@ -23,7 +23,7 @@ export const insights: Insight[] = [
       "A family that just moved in has no chiropractor and no dentist yet. Here is why that window matters — and why it closes fast.",
     date: "2026-05-20",
     readingTime: "6 min read",
-    author: "Eric L. Eakin, DC",
+    author: "Dr. Eric L. Eakin, DC",
     tags: ["New Patients", "Direct Mail"],
     body: [
       { type: "p", children: "Most practice marketing tries to convince settled residents to switch providers. That is the hardest sale in local services — inertia is on the incumbent's side. New homeowners are the opposite case: they have no incumbent. A family that just moved across town, or across the country, is actively rebuilding its entire roster of local providers." },
@@ -40,7 +40,7 @@ export const insights: Insight[] = [
       "I paid $67 a month for a new-homeowner list in my own practice. Two patients from it were worth over $6,000. The math still holds up.",
     date: "2026-04-15",
     readingTime: "5 min read",
-    author: "Eric L. Eakin, DC",
+    author: "Dr. Eric L. Eakin, DC",
     tags: ["Direct Mail", "ROI"],
     body: [
       { type: "p", children: "This is a first-person story from my own practice, not a client result — but it is the reason ELE Practice Leads exists. As a practicing chiropractor, I subscribed to an Equifax-sourced new-homeowner list for $67 a month and mailed a simple welcome offer to the new arrivals in my area." },
@@ -57,7 +57,7 @@ export const insights: Insight[] = [
       "The list gets you to the mailbox. The offer decides what happens next. A practical guide to welcome offers that convert.",
     date: "2026-03-18",
     readingTime: "6 min read",
-    author: "Eric L. Eakin, DC",
+    author: "Dr. Eric L. Eakin, DC",
     tags: ["Direct Mail", "New Patients"],
     body: [
       { type: "p", children: "A new homeowner's mail pile is full of generic coupons. A welcome offer from a local chiropractor or dentist can stand out in that pile — if it reads like a neighbor introducing themselves rather than a chain blasting a discount." },
@@ -74,7 +74,7 @@ export const insights: Insight[] = [
       "Public-record property data, not patient data. How these lists are built, what the deliverability guarantee means, and how opt-outs work.",
     date: "2026-02-10",
     readingTime: "5 min read",
-    author: "Eric L. Eakin, DC",
+    author: "Dr. Eric L. Eakin, DC",
     tags: ["Data", "Compliance"],
     body: [
       { type: "p", children: "Providers are rightly careful about data, so it is worth being precise about what a new-homeowner list actually is. Home purchases are recorded in public county records. List vendors compile those records into monthly files: names and mailing addresses of people who recently bought a home in a given ZIP code. That is the entire dataset." },

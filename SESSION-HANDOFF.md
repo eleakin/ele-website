@@ -12,8 +12,8 @@ _Last updated: 2026-07-22._
 
 A marketing site for **ELE Practice Leads** — a done-for-you **new-homeowner
 lead-generation service** for Nevada chiropractors and dentists (monthly lists
-of new homeowners by ZIP code, ready to mail; tiers: Starter $147 / Growth $247
-/ Full-Service $397 per month). Founder: **Eric L. Eakin, DC**. Tagline:
+of new homeowners by ZIP code, ready to mail; tiers: Starter $177 / Growth $277
+/ Full-Service $397 per month, postcard-mailing add-on +$75/$100/$150). Founder: **Eric L. Eakin, DC**. Tagline:
 _Evidence. Leverage. Execution._ Proof point: the founder's own
 $67/month list → two patients worth $6,000+ (always framed as founder
 experience, never a client result; per user request the site does not

@@ -58,7 +58,7 @@ export default function HomePage() {
 
       <CtaBanner
         title="Want to see the real names in your ZIP code?"
-        body="Ask for a free sample list — 25–50 actual new homeowners in a ZIP code you choose. See exactly what you'd be mailing to before you spend a dollar."
+        body="Ask for a free sample list — 25 actual new homeowners in a ZIP code you choose. See exactly what you'd be mailing to before you spend a dollar."
         cta="Get a free sample list"
       />
     </>
