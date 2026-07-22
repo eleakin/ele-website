@@ -37,13 +37,13 @@ export const insights: Insight[] = [
     slug: "the-67-dollar-list-a-direct-mail-roi-story",
     title: "The $67 list: what one month of new-homeowner data did for my practice",
     description:
-      "In 2006 I paid $67 a month for a new-homeowner list. Two patients from it were worth over $6,000. The math still holds up.",
+      "I paid $67 a month for a new-homeowner list in my own practice. Two patients from it were worth over $6,000. The math still holds up.",
     date: "2026-04-15",
     readingTime: "5 min read",
     author: "Eric L. Eakin, DC",
     tags: ["Direct Mail", "ROI"],
     body: [
-      { type: "p", children: "This is a first-person story from my own practice, not a client result — but it is the reason ELE Practice Leads exists. In 2006 I subscribed to an Equifax-sourced new-homeowner list for $67 a month and mailed a simple welcome offer to the new arrivals in my area." },
+      { type: "p", children: "This is a first-person story from my own practice, not a client result — but it is the reason ELE Practice Leads exists. As a practicing chiropractor, I subscribed to an Equifax-sourced new-homeowner list for $67 a month and mailed a simple welcome offer to the new arrivals in my area." },
       { type: "h2", children: "What came back" },
       { type: "ul", children: ["Two patients I can trace directly to that list became long-term, high-value patients.", "Together they represented more than $6,000 in business — against a data cost of $67 a month.", "Neither would have found the practice otherwise; they were new to the area and chose the first credible offer they received."] },
       { type: "p", children: "One documented experience does not guarantee your results — your ZIP codes, your offer, and your follow-up all matter. But the structure of the math is worth noticing: when the monthly cost is two digits and a single retained patient is worth four, the list does not need to work often to pay for itself many times over." },

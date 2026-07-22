@@ -14,9 +14,10 @@ A marketing site for **ELE Practice Leads** — a done-for-you **new-homeowner
 lead-generation service** for Nevada chiropractors and dentists (monthly lists
 of new homeowners by ZIP code, ready to mail; tiers: Starter $147 / Growth $247
 / Full-Service $397 per month). Founder: **Eric L. Eakin, DC**. Tagline:
-_Evidence. Leverage. Execution._ Proof point: the founder's own 2006
+_Evidence. Leverage. Execution._ Proof point: the founder's own
 $67/month list → two patients worth $6,000+ (always framed as founder
-experience, never a client result).
+experience, never a client result; per user request the site does not
+mention the year it happened).
 
 > History: the site was originally built as an HR / people-analytics consulting
 > site, then rebranded to chiropractic RCM via the `ele-chiro-pivot` skill, then
@@ -50,13 +51,13 @@ Framer Motion · React Hook Form + Zod · Supabase (`@supabase/supabase-js` +
 | File | Contents |
 | --- | --- |
 | `lib/site-config.ts` | Brand name, description, email, address, nav |
-| `components/site/hero.tsx` | Homepage hero copy (2006 proof point) + trust line |
+| `components/site/hero.tsx` | Homepage hero copy (founder proof point) + trust line |
 | `app/page.tsx` | Homepage section order/headings |
 | `lib/content/services.ts` | 3 pricing tiers + 4-step process (Pick ZIPs→We pull the list→Mail offer→Track) |
 | `lib/content/case-studies.ts` | **Empty by design** (no fabricated results) |
 | `lib/content/insights.ts` | 4 articles on new-patient acquisition / direct-mail ROI |
 | `lib/content/team.ts` | Founder bio (Eric L. Eakin, DC) |
-| `components/site/results-strip.tsx` | Homepage "opportunity in numbers" — founder 2006 figures + vendor guarantee, clearly labeled |
+| `components/site/results-strip.tsx` | Homepage "opportunity in numbers" — founder list figures + vendor guarantee, clearly labeled |
 | `components/site/lead-estimator.tsx` | Interactive lead-volume estimator (replaced the denial calculator) |
 | `components/site/logo.tsx` | Header wordmark (descriptor shows at `lg`+) |
 | `app/privacy/page.tsx` | Privacy policy incl. list data-source/opt-out disclosure (template — **needs legal review**) |
