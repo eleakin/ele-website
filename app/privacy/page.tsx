@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How ELE Practice Analytics handles information submitted through this website, and our approach to protected health information (PHI).",
+    "How ELE Practice Leads handles information submitted through this website, where our mailing-list data comes from, and how to opt out of mailings.",
 };
 
 export default function PrivacyPage() {
@@ -28,13 +28,17 @@ export default function PrivacyPage() {
             the services you request.
           </p>
 
-          <h2>Protected health information (PHI)</h2>
+          <h2>Mailing-list data sources and opt-out</h2>
           <p>
-            Please do not submit patient health information (PHI) through this
-            website. The contact form is not a secure channel for PHI. Before any
-            engagement that involves access to PHI, we execute a Business
-            Associate Agreement (BAA) and handle data only through agreed,
-            secured methods consistent with HIPAA.
+            The new-homeowner lists we provide to client practices are compiled
+            by third-party data vendors from public property records (such as
+            county deed recordings). They contain names and mailing addresses
+            only, and never contain patient, health, or financial account
+            information. If you have received a mailing from one of our client
+            practices and would prefer not to receive future mailings, email us
+            at <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> and
+            we will add you to our suppression list and honor the request in
+            all future list deliveries.
           </p>
 
           <h2>How we use and share information</h2>

@@ -1,7 +1,9 @@
-# ELE People Analytics — Marketing Site
+# ELE Practice Leads — Marketing Site
 
-A production-ready Next.js (App Router) marketing site for a people / HR data
-analytics consulting practice. Clean, accessible, fast, easy to rebrand.
+A production-ready Next.js (App Router) marketing site for a new-homeowner
+lead-generation service for Nevada chiropractors and dentists. Clean,
+accessible, fast, easy to rebrand. (Originally built as an HR-analytics site,
+later a chiropractic RCM site — the design system survives each rebrand.)
 
 ## Stack
 
@@ -186,10 +188,10 @@ frontmatter shape matches.
 The brief left bracketed placeholders. The defaults below are easy to swap in
 `lib/site-config.ts` and `lib/content/*`:
 
-- **Firm name:** ELE People Analytics
-- **Type:** People / HR data analytics consulting
-- **Target clients:** HR and total rewards leaders at mid-to-large employers
-  (technology, retail, healthcare, financial services)
+- **Firm name:** ELE Practice Leads
+- **Type:** New-homeowner lead generation (done-for-you monthly lists)
+- **Target clients:** Solo and small-group chiropractic and dental practices
+  in Nevada
 - **Palette:** Deep navy (`#0B1F33`) + slate + deep teal accent (`#0F766E`)
 - **Fonts:** Fraunces (display) + Inter (body)
 - **Domain:** `https://www.example.com` (replace via `NEXT_PUBLIC_SITE_URL` and

@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/site/cta-banner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Founder-led chiropractic revenue-cycle and audit-defense analytics — clinical fluency and statistical rigor brought to the back office.",
+    "Founder-led new-patient lead generation for Nevada chiropractors and dentists — built by a chiropractor who has used new-homeowner lists to grow his own practice.",
 };
 
 export default function AboutPage() {
@@ -18,13 +18,13 @@ export default function AboutPage() {
           <SectionHeading
             as="h1"
             eyebrow="About the practice"
-            title="Built by a chiropractor who reads the data."
-            description="Most chiropractic billing help comes from people who have never written a SOAP note — or from analysts who have never read one. ELE Practice Analytics exists to close that gap: clinical fluency and statistical rigor, applied to the back office."
+            title="Built by a chiropractor who ran this play himself."
+            description="Most lead-gen vendors have never sat in the provider's chair. ELE Practice Leads is founded by a chiropractor who used a new-homeowner list to grow his own practice — and who now brings that experience, plus years of data-analytics work, to practices across Nevada."
           />
           <dl className="grid grid-cols-3 gap-6 border-t border-border pt-8 lg:border-0 lg:pt-0">
             <Stat v="DC + Analyst" k="Founder-led" />
-            <Stat v="Your EHR" k="No platform switch" />
-            <Stat v="BAA" k="On request" />
+            <Stat v="Nevada" k="Chiros & dentists" />
+            <Stat v="Monthly" k="No long contract" />
           </dl>
         </div>
       </Section>
@@ -34,9 +34,10 @@ export default function AboutPage() {
           <div>
             <h2 className="font-display text-3xl text-ink">Mission</h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-              To help insurance-billing chiropractic practices keep the revenue
-              they have already earned — by making denials, A/R, and audit risk
-              visible, and the fixes obvious.
+              To put growing Nevada practices first in line with the families
+              who just moved into their neighborhoods — with clean data,
+              honest math, and a service simple enough to actually use every
+              month.
             </p>
           </div>
           <div>
@@ -44,15 +45,15 @@ export default function AboutPage() {
             <ul className="mt-4 space-y-3 text-base text-ink/85">
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">A clinician reads your data.</strong> We understand the note and the claim, not just the spreadsheet.</span>
+                <span><strong className="text-ink">A provider built it.</strong> The founder is a DC who used this exact approach in his own practice — he knows what a front desk can realistically execute.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">No platform switch.</strong> We work on top of the EHR and billing system you already run.</span>
+                <span><strong className="text-ink">See it before you buy it.</strong> A free 25–50 name sample list for your own ZIP code, before any money changes hands.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                <span><strong className="text-ink">We say no.</strong> If we’re not the right fit, we’ll tell you and point you somewhere better.</span>
+                <span><strong className="text-ink">Honest numbers only.</strong> Our proof point is clearly labeled founder experience, not a client result — and we will never promise outcomes we can&rsquo;t guarantee.</span>
               </li>
             </ul>
           </div>

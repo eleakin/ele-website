@@ -1,23 +1,29 @@
-# Session Handoff — ELE Practice Analytics
+# Session Handoff — ELE Practice Leads
 
 A context document so this project can be picked up on another machine (or by a
 fresh Claude session). Read this, then `git pull` / open a Codespace and you're
 caught up. **Contains no secrets** — keys live in env vars (see below).
 
-_Last updated: 2026-06-07._
+_Last updated: 2026-07-22._
 
 ---
 
 ## What this is
 
-A marketing site for **ELE Practice Analytics** — a chiropractic **revenue-cycle
-and audit-defense advisory** ("Chiropractic Revenue Cycle Management"). Founder:
-**Eric L. Eakin, DC**. Tagline: _Evidence. Leverage. Execution._
+A marketing site for **ELE Practice Leads** — a done-for-you **new-homeowner
+lead-generation service** for Nevada chiropractors and dentists (monthly lists
+of new homeowners by ZIP code, ready to mail; tiers: Starter $147 / Growth $247
+/ Full-Service $397 per month). Founder: **Eric L. Eakin, DC**. Tagline:
+_Evidence. Leverage. Execution._ Proof point: the founder's own 2006
+$67/month list → two patients worth $6,000+ (always framed as founder
+experience, never a client result).
 
 > History: the site was originally built as an HR / people-analytics consulting
-> site, then rebranded to chiropractic RCM via the `ele-chiro-pivot` skill. It is
-> a **content rebrand on a preserved design system** — navy + teal, Fraunces
-> (display) + Inter (body), shadcn-style components, Framer Motion.
+> site, then rebranded to chiropractic RCM via the `ele-chiro-pivot` skill, then
+> repositioned again (2026-07) to lead generation per the "ELE Practice Leads"
+> marketing plan (Section 7). Each pivot is a **content rebrand on a preserved
+> design system** — navy + teal, Fraunces (display) + Inter (body), shadcn-style
+> components, Framer Motion.
 
 ## Live locations
 
@@ -44,16 +50,16 @@ Framer Motion · React Hook Form + Zod · Supabase (`@supabase/supabase-js` +
 | File | Contents |
 | --- | --- |
 | `lib/site-config.ts` | Brand name, description, email, address, nav |
-| `components/site/hero.tsx` | Homepage hero copy + trust line |
+| `components/site/hero.tsx` | Homepage hero copy (2006 proof point) + trust line |
 | `app/page.tsx` | Homepage section order/headings |
-| `lib/content/services.ts` | 6 services + 4-step process (Export→Diagnose→Report→Follow through) |
-| `lib/content/case-studies.ts` | **Empty by design** (no fabricated results yet) |
-| `lib/content/insights.ts` | 4 chiropractic RCM/compliance articles |
+| `lib/content/services.ts` | 3 pricing tiers + 4-step process (Pick ZIPs→We pull the list→Mail offer→Track) |
+| `lib/content/case-studies.ts` | **Empty by design** (no fabricated results) |
+| `lib/content/insights.ts` | 4 articles on new-patient acquisition / direct-mail ROI |
 | `lib/content/team.ts` | Founder bio (Eric L. Eakin, DC) |
-| `components/site/results-strip.tsx` | Homepage "problem in numbers" — **industry benchmarks, fact-checked** |
-| `components/site/denial-calculator.tsx` | Interactive recoverable-revenue calculator |
+| `components/site/results-strip.tsx` | Homepage "opportunity in numbers" — founder 2006 figures + vendor guarantee, clearly labeled |
+| `components/site/lead-estimator.tsx` | Interactive lead-volume estimator (replaced the denial calculator) |
 | `components/site/logo.tsx` | Header wordmark (descriptor shows at `lg`+) |
-| `app/privacy/page.tsx` | Privacy policy (template — **needs legal review**) |
+| `app/privacy/page.tsx` | Privacy policy incl. list data-source/opt-out disclosure (template — **needs legal review**) |
 
 ## Contact form → Supabase
 

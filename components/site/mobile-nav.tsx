@@ -54,7 +54,7 @@ export function MobileNav() {
             <div className="mt-6">
               <Button asChild variant="accent" size="lg" className="w-full">
                 <Link href="/contact" onClick={() => setOpen(false)}>
-                  Get a free denial review
+                  Get a free sample list
                 </Link>
               </Button>
             </div>

@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/site/cta-banner";
 export const metadata: Metadata = {
   title: "Approach",
   description:
-    "How we work: export, diagnose, report, and follow through. A fixed-scope path from your existing billing data to a dollar-weighted recovery plan.",
+    "How we work: pick your ZIP codes, we pull the list, you mail your welcome offer, and we track what comes back. A simple monthly rhythm from ZIP code to new patient.",
 };
 
 export default function ApproachPage() {
@@ -17,8 +17,8 @@ export default function ApproachPage() {
         <SectionHeading
           as="h1"
           eyebrow="Our approach"
-          title="From your billing export to a plan you can act on."
-          description="A deliberately simple, fixed-scope path. No platform switch, no rip-and-replace — we work on top of the system you already run."
+          title="From your ZIP codes to new patients in your schedule."
+          description="A deliberately simple monthly rhythm. No new software, no long-term contract — you pick the ZIP codes, we handle the data, your welcome offer does the rest."
         />
       </Section>
 
@@ -30,14 +30,14 @@ export default function ApproachPage() {
         <SectionHeading
           eyebrow="On results"
           title="We publish numbers we can stand behind."
-          description="We are a new practice and we will not show invented client results. As pilot engagements complete, real and clearly-attributed outcomes will appear here. Until then, the figures on our site are labeled industry benchmarks — not client claims."
+          description="We are a new service and we will not show invented client results. The 2006 proof point on this site is the founder's own documented experience, clearly labeled as such. As subscriber practices build measurable track records, real and clearly-attributed outcomes will appear here."
         />
       </Section>
 
       <CtaBanner
-        title="Want to see how it would work for your clinic?"
-        body="Send us a standard billing export and we'll walk you through what your denials and A/R are really costing you."
-        cta="Get a free denial review"
+        title="Want to see how it would work for your practice?"
+        body="Tell us your ZIP codes and we'll pull a free sample list — 25–50 real new homeowners in your area — so you can see the volume before you spend anything."
+        cta="Get a free sample list"
       />
     </>
   );

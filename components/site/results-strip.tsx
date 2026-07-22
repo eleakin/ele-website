@@ -1,12 +1,12 @@
 import { FadeIn } from "./fade-in";
 
-// Industry benchmarks — NOT client results. These are general figures from
-// public industry sources, used to frame the size of the problem.
+// The founder's own documented experience plus vendor-published figures —
+// NOT client results. Used to frame why new-homeowner mail works.
 const benchmarks = [
-  { metric: "20–30%", label: "of revenue lost to denials and leakage" },
-  { metric: "25 vs 75", label: "days in A/R — the cost of follow-up discipline" },
-  { metric: "98940–43", label: "adjustment codes where errors concentrate" },
-  { metric: "1–3 hrs/wk", label: "clinician time AI documentation can return" },
+  { metric: "$67/mo", label: "what the founder paid for a new-homeowner list in 2006" },
+  { metric: "$6,000+", label: "combined business from the two patients that list produced" },
+  { metric: "95%", label: "deliverability guaranteed by the list source" },
+  { metric: "Monthly", label: "fresh names for your ZIP codes, every single month" },
 ];
 
 export function ResultsStrip() {
@@ -23,10 +23,10 @@ export function ResultsStrip() {
         ))}
       </dl>
       <p className="mt-4 text-xs text-ink-muted">
-        Illustrative industry ranges, not client results — drawn from public
-        revenue-cycle benchmarks (MGMA; CMS chiropractic billing guidance;
-        chiropractic-billing industry reporting) and published AI-scribe studies.
-        Verify against your own practice data.
+        The 2006 figures are the founder&rsquo;s own documented experience in his
+        practice — one illustrative case, not a client result or a guarantee.
+        Deliverability is the list vendor&rsquo;s published guarantee. Your results
+        will depend on your ZIP codes, your offer, and your follow-up.
       </p>
     </FadeIn>
   );

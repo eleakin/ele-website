@@ -103,7 +103,7 @@ export function ContactForm() {
         />
         <Field
           id="organization"
-          label="Organization"
+          label="Practice name"
           error={errors.organization?.message}
           input={
             <Input
@@ -117,8 +117,8 @@ export function ContactForm() {
       </div>
       <Field
         id="message"
-        label="What are you working on?"
-        helper="A sentence or two is enough — we'll follow up to learn more."
+        label="What would you like to grow?"
+        helper="A sentence or two is enough — include the ZIP code(s) you're interested in if you'd like a free sample list."
         error={errors.message?.message}
         input={
           <Textarea

@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Request a free denial review for your chiropractic practice. Every inquiry is read by the founder and answered within one business day.",
+    "Request a free sample list of new homeowners in your ZIP code. Every inquiry is read by the founder and answered within one business day.",
 };
 
 export default function ContactPage() {
@@ -18,9 +18,10 @@ export default function ContactPage() {
           <span className="eyebrow">Contact</span>
           <h1 className="mt-3">Let’s talk.</h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-muted">
-            Tell us a little about your practice and what you’re seeing in your
-            billing. Every inquiry is read by the founder and answered within one
-            business day.
+            Tell us about your practice and the ZIP codes you’d like new
+            patients from — we’ll pull a free sample list so you can see the
+            real volume in your area. Every inquiry is read by the founder and
+            answered within one business day.
           </p>
 
           <dl className="mt-10 space-y-5 text-sm">
@@ -39,9 +40,10 @@ export default function ContactPage() {
           <div className="mb-6 flex items-start gap-3 rounded-lg border border-accent/30 bg-accent/5 p-4 text-sm text-ink">
             <ShieldCheck aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-accent" />
             <p>
-              Please do not include any patient health information (PHI) in this
-              form. A Business Associate Agreement (BAA) is provided before any
-              data is shared.
+              Our lists are compiled from public property records and contain no
+              patient or health information. Anyone may opt out of a
+              practice&rsquo;s mailings at any time by contacting us — opt-out
+              requests are honored and tracked.
             </p>
           </div>
           <ContactForm />
