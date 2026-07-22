@@ -75,6 +75,15 @@ Framer Motion · React Hook Form + Zod · Supabase (`@supabase/supabase-js` +
   nullable at the DB level (predates existing rows) but required by the form.
 - Insert uses `return=minimal` (no `RETURNING`) so no read policy is needed —
   **do not add `.select()`** to the insert or it will break.
+- **Email notification (2026-07-22):** an `AFTER INSERT` trigger
+  (`trg_notify_contact_submission`, via `pg_net`) calls the
+  `contact-notify` Edge Function, which emails each new submission to
+  eric@eakin.cc through Resend. Trigger and function share a secret header;
+  the function needs the `RESEND_API_KEY` secret set in the Supabase
+  dashboard (Edge Functions → Secrets) or sends fail with HTTP 500.
+  Failed sends are visible in `net._http_response` and the function logs.
+  Hostinger-side forwarding for contact@eleconsulting.xyz is configured
+  separately by the user.
 
 ## Environment variables
 
