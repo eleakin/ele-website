@@ -66,7 +66,7 @@ export function Hero() {
           {...fade(0.3)}
           className="mt-16 flex max-w-3xl flex-wrap items-center gap-x-3 gap-y-3 border-t border-border pt-10 text-sm font-medium text-ink"
         >
-          {["DC-founded", "Public-record data — no patient information", "Delivered monthly, ready to mail"].map(
+          {["DC-founded", "Public-record data — no patient information", "Delivered monthly, ready to mail", "We can mail for you"].map(
             (item, i) => (
               <li key={item} className="flex items-center gap-3">
                 {i > 0 && (

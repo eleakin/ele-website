@@ -16,12 +16,12 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "starter",
-    title: "Starter — $147/mo",
+    title: "Starter — $177/mo",
     summary:
       "The core list, delivered clean. A monthly file of new homeowners in one or two ZIP codes, ready for your own mailing workflow.",
     outcomes: [
       "Monthly new-homeowner list for 1–2 ZIP codes",
-      "Delivered as a clean, deduplicated CSV",
+      "Delivered as a clean spreadsheet — mail-merge ready",
       "Add postcard mailing — we mail them for you for +$75/mo",
       "Cancel any month — no long-term contract",
     ],
@@ -29,14 +29,14 @@ export const services: Service[] = [
   },
   {
     slug: "growth",
-    title: "Growth — $247/mo",
+    title: "Growth — $277/mo",
     summary:
-      "Our recommended plan. Wider coverage, files formatted for immediate use, and a monthly summary so you know what the program is returning.",
+      "Our recommended plan. The same clean, mail-merge-ready delivery, with wider coverage across up to four ZIP codes.",
     outcomes: [
       "Monthly lists for up to 4 ZIP codes",
-      "Ready-to-use mail-merge file plus a call list",
-      "Monthly ROI summary of the program",
+      "Delivered as a clean spreadsheet — mail-merge ready",
       "Add postcard mailing — we mail them for you for +$100/mo",
+      "Cancel any month — no long-term contract",
     ],
     icon: TrendingUp,
   },
@@ -44,12 +44,12 @@ export const services: Service[] = [
     slug: "full-service",
     title: "Full-Service — $397/mo",
     summary:
-      "Everything in Growth, plus done-for-you postcard design and mail coordination — and for +$150/mo we mail the postcards out for you.",
+      "Our widest coverage: everything in the Growth plan plus one more ZIP code, with the option to have us mail the postcards for you.",
     outcomes: [
-      "Everything in the Growth plan",
-      "Done-for-you postcard design",
-      "Mail-house coordination handled end to end",
+      "Everything in the Growth plan, plus one ZIP code",
+      "Delivered as a clean spreadsheet — mail-merge ready",
       "Add postcard mailing — we mail them for you for +$150/mo",
+      "Cancel any month — no long-term contract",
     ],
     icon: Send,
   },
@@ -59,7 +59,7 @@ export const processSteps = [
   {
     n: "01",
     title: "Pick your ZIP codes",
-    body: "Choose the ZIP codes you want new patients from — usually the ones closest to your practice. We start with a free 25–50 name sample so you can see the volume first.",
+    body: "Choose the ZIP codes you want new patients from — usually the ones closest to your practice. We start with a free 25 name sample so you can see the volume first.",
   },
   {
     n: "02",

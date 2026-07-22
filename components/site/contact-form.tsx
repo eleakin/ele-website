@@ -65,7 +65,7 @@ export function ContactForm() {
         />
         <Field
           id="email"
-          label="Work email"
+          label="Contact email"
           error={errors.email?.message}
           input={
             <Input

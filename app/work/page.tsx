@@ -36,7 +36,7 @@ export default function ApproachPage() {
 
       <CtaBanner
         title="Want to see how it would work for your practice?"
-        body="Tell us your ZIP codes and we'll pull a free sample list — 25–50 real new homeowners in your area — so you can see the volume before you spend anything."
+        body="Tell us your ZIP codes and we'll pull a free sample list — 25 real new homeowners in your area — so you can see the volume before you spend anything."
         cta="Get a free sample list"
       />
     </>
