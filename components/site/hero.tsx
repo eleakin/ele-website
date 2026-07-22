@@ -45,9 +45,9 @@ export function Hero() {
           {...fade(0.16)}
           className="mt-4 max-w-2xl text-base text-ink-muted leading-relaxed"
         >
-          Our founder ran this exact play in his own practice in 2006: a
-          $67/month new-homeowner list produced two patients worth over $6,000
-          in combined business. One documented experience, not a promise — but
+          Our founder ran this exact play in his own practice: a $67/month
+          new-homeowner list produced two patients worth over $6,000 in
+          combined business. One documented experience, not a promise — but
           it is why this service exists.
         </motion.p>
         <motion.div {...fade(0.2)} className="mt-10 flex flex-wrap items-center gap-3">

@@ -30,7 +30,7 @@ export default function ApproachPage() {
         <SectionHeading
           eyebrow="On results"
           title="We publish numbers we can stand behind."
-          description="We are a new service and we will not show invented client results. The 2006 proof point on this site is the founder's own documented experience, clearly labeled as such. As subscriber practices build measurable track records, real and clearly-attributed outcomes will appear here."
+          description="We are a new service and we will not show invented client results. The proof point on this site is the founder's own documented experience, clearly labeled as such. As subscriber practices build measurable track records, real and clearly-attributed outcomes will appear here."
         />
       </Section>
 
