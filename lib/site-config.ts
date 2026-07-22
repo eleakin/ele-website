@@ -2,11 +2,11 @@
  * Central site configuration. Swap these values to rebrand the entire site.
  */
 export const siteConfig = {
-  name: "ELE Practice Analytics",
+  name: "ELE Practice Leads",
   shortName: "ELE",
   url: "https://www.example.com", // TODO: replace with production URL
   description:
-    "Revenue-cycle and audit-defense analytics for insurance-billing chiropractic practices. We help clinics recover revenue lost to denials and stay audit-ready — built by a chiropractor who reads the data.",
+    "Practice growth & new-patient lead generation for Nevada chiropractors and dentists. A done-for-you monthly list of new homeowners in your ZIP codes — families actively choosing new local providers — delivered ready to mail.",
   tagline: "Evidence. Leverage. Execution.",
   email: "contact@eleconsulting.xyz",
   address: {

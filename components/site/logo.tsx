@@ -21,7 +21,7 @@ export function Logo({ className }: { className?: string }) {
       </svg>
       <span>{siteConfig.shortName}</span>
       <span className="hidden whitespace-nowrap text-sm font-normal text-ink-muted lg:inline">
-        / Chiropractic Revenue Cycle Management
+        / New-Patient Lead Generation
       </span>
     </span>
   );

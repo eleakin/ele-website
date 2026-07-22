@@ -34,7 +34,7 @@ export function SiteHeader() {
 
         <div className="hidden md:block">
           <Button asChild variant="accent" size="sm">
-            <Link href="/contact">Free denial review</Link>
+            <Link href="/contact">Free sample list</Link>
           </Button>
         </div>
 

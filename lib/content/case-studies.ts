@@ -12,7 +12,8 @@ export type CaseStudy = {
 };
 
 // No published case studies yet. We do not present invented numbers as real
-// outcomes. Real, client-attributed results will be added here once pilot
-// engagements are complete. Until then the site leads with our Approach and
-// clearly-labeled industry benchmarks.
+// outcomes. The founder's own 2006 new-homeowner-list experience appears on
+// the site clearly framed as founder experience, not a client result. Real,
+// client-attributed results will be added here once the first subscriber
+// practices have measurable outcomes to share.
 export const caseStudies: CaseStudy[] = [];

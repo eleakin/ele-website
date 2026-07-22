@@ -1,10 +1,7 @@
 import {
-  BarChart3,
-  Database,
-  LineChart,
-  ShieldCheck,
-  Workflow,
-  Users,
+  ListChecks,
+  TrendingUp,
+  Send,
   type LucideIcon,
 } from "lucide-react";
 
@@ -18,98 +15,62 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "denial-diagnostic",
-    title: "Denial Diagnostic",
+    slug: "starter",
+    title: "Starter — $147/mo",
     summary:
-      "A fixed-scope review of denials, A/R aging, and audit risk — with a measurable baseline.",
+      "The core list, delivered clean. A monthly file of new homeowners in one ZIP code, ready for your own mailing workflow.",
     outcomes: [
-      "Root-cause analysis of top denial drivers",
-      "Dollar-weighted recovery action list",
-      "A baseline you can measure future months against",
+      "Monthly new-homeowner list for 1 ZIP code",
+      "Delivered as a clean, deduplicated CSV",
+      "Cancel any month — no long-term contract",
     ],
-    icon: LineChart,
+    icon: ListChecks,
   },
   {
-    slug: "revenue-cycle-analytics",
-    title: "Revenue-Cycle Analytics",
+    slug: "growth",
+    title: "Growth — $247/mo",
     summary:
-      "Recurring dashboards and denial-prediction reporting, built in R, on top of the EHR you already run.",
+      "Our recommended plan. Wider coverage, files formatted for immediate use, and a monthly summary so you know what the program is returning.",
     outcomes: [
-      "Monthly denial, A/R, and clean-claim dashboards",
-      "Predictive flags before claims are submitted",
-      "Plain-language briefs for the front desk",
+      "Monthly lists for up to 3 ZIP codes",
+      "Ready-to-use mail-merge file plus a call list",
+      "Monthly ROI summary of the program",
     ],
-    icon: BarChart3,
+    icon: TrendingUp,
   },
   {
-    slug: "audit-defense-documentation",
-    title: "Audit Defense & Documentation",
+    slug: "full-service",
+    title: "Full-Service — $397/mo",
     summary:
-      "Documentation-quality scoring against medical-necessity and active-vs-maintenance rules.",
+      "Everything in Growth, plus we handle the mail itself — postcard design and mailing coordination, done for you.",
     outcomes: [
-      "Audit-readiness scoring of your notes",
-      "Active-treatment vs maintenance documentation review",
-      "Defensible records before a payer asks",
+      "Everything in the Growth plan",
+      "Done-for-you postcard design",
+      "Mail-house coordination handled end to end",
     ],
-    icon: ShieldCheck,
-  },
-  {
-    slug: "eligibility-automation",
-    title: "Eligibility & Front-Desk Automation",
-    summary:
-      "Pre-visit eligibility, benefit, and prior-auth checks that stop denials before the patient arrives.",
-    outcomes: [
-      "Automated pre-visit eligibility verification",
-      "Visit-limit and prior-auth alerts",
-      "Fewer surprises at time of service",
-    ],
-    icon: Workflow,
-  },
-  {
-    slug: "ai-tool-enablement",
-    title: "AI Tool Enablement",
-    summary:
-      "Configure and actually use the AI features your platform already charges you for — without a migration.",
-    outcomes: [
-      "Setup of existing AI scribe / coding tools",
-      "Workflow templates your staff will adopt",
-      "No platform switch required",
-    ],
-    icon: Database,
-  },
-  {
-    slug: "practice-team-coaching",
-    title: "Practice Team Coaching",
-    summary:
-      "We pair with your billing staff until they own the workflow — not a deck and a goodbye.",
-    outcomes: [
-      "Embedded coaching with your billing team",
-      "Follow-up cadence and runbooks",
-      "Success means we are not a permanent line item",
-    ],
-    icon: Users,
+    icon: Send,
   },
 ];
 
 export const processSteps = [
   {
     n: "01",
-    title: "Export",
-    body: "You send a standard billing export from the system you already use. No platform switch, no rip-and-replace.",
+    title: "Pick your ZIP codes",
+    body: "Choose the ZIP codes you want new patients from — usually the ones closest to your practice. We start with a free 25–50 name sample so you can see the volume first.",
   },
   {
     n: "02",
-    title: "Diagnose",
-    body: "We model denials, A/R aging, and documentation risk down to root cause — what is actually costing you, and why.",
+    title: "We pull the list",
+    body: "Every month we pull the newest homeowners in your ZIP codes from public-record property data, deduplicate it, and deliver it ready to use — 95% deliverability guaranteed by the source.",
   },
   {
     n: "03",
-    title: "Report",
-    body: "You get plain-language findings with a ranked, dollar-weighted action list your front desk can act on this week.",
+    title: "Mail your welcome offer",
+    body: "You (or we, on Full-Service) send a welcome offer — a new-patient exam, a cleaning special — that lands before these families have chosen a provider.",
   },
   {
     n: "04",
-    title: "Follow through",
-    body: "Optional ongoing analytics and coaching until the numbers move. Success means we are not a permanent line item.",
+    title: "Track and refine",
+    body: "New patients tell you how they found you; we tally it in a monthly summary. Keep the ZIP codes that produce, swap the ones that don't.",
   },
 ];

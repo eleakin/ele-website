@@ -7,9 +7,9 @@ import { services } from "@/lib/content/services";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services & Pricing",
   description:
-    "Denial diagnostics, revenue-cycle analytics, audit-defense documentation, eligibility automation, AI tool enablement, and practice team coaching for chiropractic clinics.",
+    "Three simple plans for new-homeowner lead generation — Starter, Growth, and Full-Service. Monthly lists of new homeowners in your ZIP codes, from $147/month.",
 };
 
 export default function ServicesPage() {
@@ -18,9 +18,9 @@ export default function ServicesPage() {
       <Section className="border-b border-border bg-surface">
         <SectionHeading
           as="h1"
-          eyebrow="Services"
-          title="Focused services. Measurable outcomes."
-          description="We deliberately keep our service catalog narrow. Each engagement is shaped around one question: where is your practice losing revenue, and what is the fastest defensible way to recover it?"
+          eyebrow="Services & pricing"
+          title="One service. Three simple plans."
+          description="Every plan is built on the same engine: a fresh monthly list of new homeowners in the ZIP codes you choose, delivered ready to use. Pick how much of the work you want us to handle. No long-term contract — every plan is month to month."
         />
       </Section>
 
@@ -48,7 +48,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="rounded-xl border border-border bg-surface p-7 shadow-soft">
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
-                    Typical outcomes
+                    What&rsquo;s included
                   </h3>
                   <ul className="mt-5 space-y-3">
                     {s.outcomes.map((o) => (
@@ -71,7 +71,7 @@ export default function ServicesPage() {
       <Section className="bg-muted/40">
         <SectionHeading
           eyebrow="How we work"
-          title="A four-phase process designed to leave your team stronger."
+          title="A simple monthly rhythm, from ZIP code to new patient."
         />
         <div className="mt-12">
           <ProcessSteps />

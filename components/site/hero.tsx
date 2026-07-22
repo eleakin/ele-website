@@ -26,24 +26,34 @@ export function Hero() {
       />
       <Container className="relative pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-32 lg:pb-36">
         <motion.div {...fade(0)} className="max-w-3xl">
-          <span className="eyebrow">Chiropractic revenue &amp; compliance analytics</span>
+          <span className="eyebrow">New-homeowner leads for Nevada chiropractors &amp; dentists</span>
         </motion.div>
         <motion.h1 {...fade(0.05)} className="mt-5 max-w-4xl">
-          Stop losing a third of your revenue to{" "}
-          <span className="text-accent">denials.</span>
+          Your next patients just{" "}
+          <span className="text-accent">moved in.</span>
         </motion.h1>
         <motion.p
           {...fade(0.12)}
           className="mt-6 max-w-2xl text-lg sm:text-xl text-ink-muted leading-relaxed"
         >
-          Audit-ready documentation and revenue-cycle analytics for
-          insurance-billing chiropractic practices — from a chiropractor who
-          reads the data, not just the claim form.
+          Families who just bought a home have no chiropractor or dentist yet —
+          they are actively choosing new local providers. We deliver a fresh
+          list of new homeowners in your ZIP codes every month, ready to mail,
+          so your welcome offer arrives before any competitor&rsquo;s.
+        </motion.p>
+        <motion.p
+          {...fade(0.16)}
+          className="mt-4 max-w-2xl text-base text-ink-muted leading-relaxed"
+        >
+          Our founder ran this exact play in his own practice in 2006: a
+          $67/month new-homeowner list produced two patients worth over $6,000
+          in combined business. One documented experience, not a promise — but
+          it is why this service exists.
         </motion.p>
         <motion.div {...fade(0.2)} className="mt-10 flex flex-wrap items-center gap-3">
           <Button asChild variant="accent" size="lg">
             <Link href="/contact">
-              Get a free denial review
+              Get a free sample list
               <ArrowRight aria-hidden="true" />
             </Link>
           </Button>
@@ -56,7 +66,7 @@ export function Hero() {
           {...fade(0.3)}
           className="mt-16 flex max-w-3xl flex-wrap items-center gap-x-3 gap-y-3 border-t border-border pt-10 text-sm font-medium text-ink"
         >
-          {["DC-led", "Works with your existing EHR", "HIPAA-ready, BAA on request"].map(
+          {["DC-founded", "Public-record data — no patient information", "Delivered monthly, ready to mail"].map(
             (item, i) => (
               <li key={item} className="flex items-center gap-3">
                 {i > 0 && (

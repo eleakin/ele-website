@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/site/section-heading";
 import { ServicesGrid } from "@/components/site/services-grid";
 import { ResultsStrip } from "@/components/site/results-strip";
 import { ProcessSteps } from "@/components/site/process-steps";
-import { DenialCalculator } from "@/components/site/denial-calculator";
+import { LeadEstimator } from "@/components/site/lead-estimator";
 import { CtaBanner } from "@/components/site/cta-banner";
 
 export default function HomePage() {
@@ -15,8 +15,8 @@ export default function HomePage() {
       <Section className="bg-muted/40">
         <SectionHeading
           eyebrow="What we do"
-          title="A small set of services, done exceptionally well."
-          description="Focused on the work that decides whether your billing pays off — recovery, defensibility, and the team habits that make it last."
+          title="One service, three simple plans."
+          description="Every plan delivers the same core thing: a fresh monthly list of new homeowners in your ZIP codes, ready to use. The tiers differ only in how much of the work we take off your plate."
         />
         <div className="mt-14">
           <ServicesGrid compact />
@@ -25,9 +25,9 @@ export default function HomePage() {
 
       <Section>
         <SectionHeading
-          eyebrow="The problem"
-          title="The problem, in numbers."
-          description="These are industry figures, not client results — a sense of how much revenue insurance-billing practices quietly lose to denials, slow follow-up, and coding errors."
+          eyebrow="Why it works"
+          title="The opportunity, in numbers."
+          description="New homeowners are actively forming new provider relationships — no established chiropractor, no established dentist, and more local spending in their first months than settled residents. The practice that reaches them first usually wins them."
         />
         <div className="mt-12">
           <ResultsStrip />
@@ -37,19 +37,19 @@ export default function HomePage() {
       <Section className="bg-muted/40">
         <SectionHeading
           eyebrow="Try it"
-          title="How much is leaking?"
-          description="Move the sliders to estimate the revenue your practice could realistically recover in a year. Illustrative only — not a guarantee."
+          title="How many new households could you reach?"
+          description="Move the sliders to estimate the new-homeowner volume in your area and what it could mean for your practice. Illustrative only — not a guarantee."
         />
         <div className="mt-12">
-          <DenialCalculator />
+          <LeadEstimator />
         </div>
       </Section>
 
       <Section id="approach">
         <SectionHeading
           eyebrow="Our approach"
-          title="From your billing export to a plan you can act on."
-          description="A deliberately simple, fixed-scope path. No platform switch — we work on top of the system you already run."
+          title="From your ZIP codes to new patients in your schedule."
+          description="A deliberately simple monthly rhythm. No new software, no long contract — you pick the ZIP codes, we handle the data."
         />
         <div className="mt-12">
           <ProcessSteps />
@@ -57,9 +57,9 @@ export default function HomePage() {
       </Section>
 
       <CtaBanner
-        title="Curious what your denials are really costing you?"
-        body="Send a standard billing export and we'll walk you through where the revenue is leaking — no platform switch, no obligation."
-        cta="Get a free denial review"
+        title="Want to see the real names in your ZIP code?"
+        body="Ask for a free sample list — 25–50 actual new homeowners in a ZIP code you choose. See exactly what you'd be mailing to before you spend a dollar."
+        cta="Get a free sample list"
       />
     </>
   );

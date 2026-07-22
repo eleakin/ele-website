@@ -7,7 +7,7 @@ import { insights } from "@/lib/content/insights";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Field notes on chiropractic revenue cycle, denials, coding, and audit-ready documentation.",
+    "Field notes on new-patient acquisition, new-homeowner direct mail, welcome offers, and practice growth for chiropractors and dentists.",
 };
 
 export default function InsightsPage() {
@@ -19,7 +19,7 @@ export default function InsightsPage() {
           as="h1"
           eyebrow="Insights"
           title="Field notes from the work."
-          description="Short pieces on the denial, coding, and documentation problems we run into most often. Written for the people doing the billing, not for marketing."
+          description="Short pieces on new-patient acquisition, direct-mail ROI, and making new-homeowner outreach actually work. Written for practice owners, not for marketers."
         />
       </Section>
 
