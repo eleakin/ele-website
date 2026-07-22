@@ -18,10 +18,11 @@ export const services: Service[] = [
     slug: "starter",
     title: "Starter — $147/mo",
     summary:
-      "The core list, delivered clean. A monthly file of new homeowners in one ZIP code, ready for your own mailing workflow.",
+      "The core list, delivered clean. A monthly file of new homeowners in one or two ZIP codes, ready for your own mailing workflow.",
     outcomes: [
-      "Monthly new-homeowner list for 1 ZIP code",
+      "Monthly new-homeowner list for 1–2 ZIP codes",
       "Delivered as a clean, deduplicated CSV",
+      "Add postcard mailing — we mail them for you for +$75/mo",
       "Cancel any month — no long-term contract",
     ],
     icon: ListChecks,
@@ -32,9 +33,10 @@ export const services: Service[] = [
     summary:
       "Our recommended plan. Wider coverage, files formatted for immediate use, and a monthly summary so you know what the program is returning.",
     outcomes: [
-      "Monthly lists for up to 3 ZIP codes",
+      "Monthly lists for up to 4 ZIP codes",
       "Ready-to-use mail-merge file plus a call list",
       "Monthly ROI summary of the program",
+      "Add postcard mailing — we mail them for you for +$100/mo",
     ],
     icon: TrendingUp,
   },
@@ -42,11 +44,12 @@ export const services: Service[] = [
     slug: "full-service",
     title: "Full-Service — $397/mo",
     summary:
-      "Everything in Growth, plus we handle the mail itself — postcard design and mailing coordination, done for you.",
+      "Everything in Growth, plus done-for-you postcard design and mail coordination — and for +$150/mo we mail the postcards out for you.",
     outcomes: [
       "Everything in the Growth plan",
       "Done-for-you postcard design",
       "Mail-house coordination handled end to end",
+      "Add postcard mailing — we mail them for you for +$150/mo",
     ],
     icon: Send,
   },
@@ -66,7 +69,7 @@ export const processSteps = [
   {
     n: "03",
     title: "Mail your welcome offer",
-    body: "You (or we, on Full-Service) send a welcome offer — a new-patient exam, a cleaning special — that lands before these families have chosen a provider.",
+    body: "You send a welcome offer — a new-patient exam, a cleaning special — that lands before these families have chosen a provider. Or add postcard mailing to any plan and we mail it for you.",
   },
   {
     n: "04",
