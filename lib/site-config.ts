@@ -2,7 +2,7 @@
  * Central site configuration. Swap these values to rebrand the entire site.
  */
 export const siteConfig = {
-  name: "ELE Leads Generation",
+  name: "ELE Lead Generation",
   shortName: "ELE",
   url: "https://www.example.com", // TODO: replace with production URL
   description:

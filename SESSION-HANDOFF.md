@@ -1,4 +1,4 @@
-# Session Handoff — ELE Leads Generation
+# Session Handoff — ELE Lead Generation
 
 A context document so this project can be picked up on another machine (or by a
 fresh Claude session). Read this, then `git pull` / open a Codespace and you're
@@ -10,7 +10,7 @@ _Last updated: 2026-07-22._
 
 ## What this is
 
-A marketing site for **ELE Leads Generation** (renamed from "ELE Practice
+A marketing site for **ELE Lead Generation** (renamed from "ELE Practice
 Leads" 2026-07-22) — a done-for-you **new-homeowner
 lead-generation service** for Nevada chiropractors and dentists (monthly lists
 of new homeowners by ZIP code, ready to mail; tiers: Starter $177 / Growth $277
