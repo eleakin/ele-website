@@ -19,7 +19,7 @@ export default function AboutPage() {
             as="h1"
             eyebrow="About the practice"
             title="Built by a chiropractor who ran this play himself."
-            description="Most lead-gen vendors have never sat in the provider's chair. ELE Practice Leads is founded by a chiropractor who used a new-homeowner list to grow his own practice — and who now brings that experience, plus years of data-analytics work, to practices across Nevada."
+            description="Most lead-gen vendors have never sat in the provider's chair. ELE Leads Generation is founded by a chiropractor who used a new-homeowner list to grow his own practice — and who now brings that experience, plus years of data-analytics work, to practices across Nevada."
           />
           <dl className="grid grid-cols-3 gap-6 border-t border-border pt-8 lg:border-0 lg:pt-0">
             <Stat v="DC + Analyst" k="Founder-led" />

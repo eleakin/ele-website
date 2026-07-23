@@ -1,4 +1,4 @@
-# Session Handoff — ELE Practice Leads
+# Session Handoff — ELE Leads Generation
 
 A context document so this project can be picked up on another machine (or by a
 fresh Claude session). Read this, then `git pull` / open a Codespace and you're
@@ -10,7 +10,8 @@ _Last updated: 2026-07-22._
 
 ## What this is
 
-A marketing site for **ELE Practice Leads** — a done-for-you **new-homeowner
+A marketing site for **ELE Leads Generation** (renamed from "ELE Practice
+Leads" 2026-07-22) — a done-for-you **new-homeowner
 lead-generation service** for Nevada chiropractors and dentists (monthly lists
 of new homeowners by ZIP code, ready to mail; tiers: Starter $177 / Growth $277
 / Full-Service $397 per month, postcard-mailing add-on +$75/$100/$150). Founder: **Eric L. Eakin, DC**. Tagline:
@@ -75,6 +76,15 @@ Framer Motion · React Hook Form + Zod · Supabase (`@supabase/supabase-js` +
   nullable at the DB level (predates existing rows) but required by the form.
 - Insert uses `return=minimal` (no `RETURNING`) so no read policy is needed —
   **do not add `.select()`** to the insert or it will break.
+- **Email notification (2026-07-22):** an `AFTER INSERT` trigger
+  (`trg_notify_contact_submission`, via `pg_net`) calls the
+  `contact-notify` Edge Function, which emails each new submission to
+  eric@eakin.cc through Resend. Trigger and function share a secret header;
+  the function needs the `RESEND_API_KEY` secret set in the Supabase
+  dashboard (Edge Functions → Secrets) or sends fail with HTTP 500.
+  Failed sends are visible in `net._http_response` and the function logs.
+  Hostinger-side forwarding for contact@eleconsulting.xyz is configured
+  separately by the user.
 
 ## Environment variables
 

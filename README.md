@@ -1,4 +1,4 @@
-# ELE Practice Leads — Marketing Site
+# ELE Leads Generation — Marketing Site
 
 A production-ready Next.js (App Router) marketing site for a new-homeowner
 lead-generation service for Nevada chiropractors and dentists. Clean,
@@ -188,7 +188,7 @@ frontmatter shape matches.
 The brief left bracketed placeholders. The defaults below are easy to swap in
 `lib/site-config.ts` and `lib/content/*`:
 
-- **Firm name:** ELE Practice Leads
+- **Firm name:** ELE Leads Generation
 - **Type:** New-homeowner lead generation (done-for-you monthly lists)
 - **Target clients:** Solo and small-group chiropractic and dental practices
   in Nevada
