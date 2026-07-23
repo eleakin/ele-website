@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How ELE Leads Generation handles information submitted through this website, where our mailing-list data comes from, and how to opt out of mailings.",
+    "How ELE Lead Generation handles information submitted through this website, where our mailing-list data comes from, and how to opt out of mailings.",
 };
 
 export default function PrivacyPage() {
