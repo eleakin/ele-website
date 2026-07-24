@@ -7,7 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const base = siteConfig.url.replace(/\/$/, "");
 
-  const staticRoutes = ["", "/services", "/work", "/about", "/insights", "/contact", "/privacy"].map(
+  // "/work" is intentionally excluded until it has case studies and a nav
+  // link — an indexable page with no internal links is a weak SEO signal.
+  const staticRoutes = ["", "/services", "/about", "/insights", "/contact", "/privacy"].map(
     (path) => ({
       url: `${base}${path || "/"}`,
       lastModified: now,
