@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter, Fraunces } from "next/font/google";
 import { siteConfig } from "@/lib/site-config";
 import { SiteHeader } from "@/components/site/site-header";
@@ -84,6 +85,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <SiteFooter />
         <OrganizationJsonLd />
+        {/* Google tag (gtag.js) — Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RNJ0YVKHZT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RNJ0YVKHZT');`}
+        </Script>
       </body>
     </html>
   );
