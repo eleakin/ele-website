@@ -4,7 +4,7 @@
 export const siteConfig = {
   name: "ELE Lead Generation",
   shortName: "ELE",
-  url: "https://www.example.com", // TODO: replace with production URL
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.eleconsulting.xyz",
   description:
     "Practice growth & new-patient lead generation for Nevada chiropractors and dentists. A done-for-you monthly list of new homeowners in your ZIP codes — families actively choosing new local providers — delivered ready to mail.",
   tagline: "Evidence. Leverage. Execution.",
